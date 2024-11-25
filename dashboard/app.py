@@ -116,7 +116,7 @@ with ui.sidebar(open="open", bg="silver"):
     ui.h6("Links")
     ui.a(
         "GitHub Source",
-        href="https://github.com/james-0177/cintel-05-cintel/",
+        href="https://github.com/denisecase/cintel-05-cintel-fancy",
         target="_blank",
     )
     ui.a(
@@ -124,7 +124,7 @@ with ui.sidebar(open="open", bg="silver"):
         href="https://github.com/james-0177/cintel-05-cintel/blob/main/dashboard/app.py",
         target="_blank",
     )
-    ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank",)
+    ui.a("PyShiny Express", href="https://shiny.posit.co/py/", target="_blank",)
     
 
 #---------------------------------------------------------------------
