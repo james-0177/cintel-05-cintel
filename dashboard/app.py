@@ -83,6 +83,17 @@ with ui.sidebar(open="open"):
         class_="text-center",
     )
 
+    ui.hr()
+    ui.h6("Links")
+    ui.a(
+        "GitHub Source",
+        href="https://github.com/james-0177/cintel-05-cintel-basic/",
+        target="_blank",
+    )
+
+    ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank",)
+    
+
 #---------------------------------------------------------------------
 # In Shiny Express, everything not in the sidebar is in the main panel
 #---------------------------------------------------------------------
@@ -109,3 +120,11 @@ def display_time():
     """Get the latest reading and return a timestamp string"""
     latest_dictionary_entry = reactive_calc_combined()
     return f"{latest_dictionary_entry['timestamp']}"
+
+with ui.layout_columns():
+    with ui.card():
+        ui.card_header("Current Data (placeholder only)")
+
+with ui.layout_columns():
+    with ui.card():
+        ui.card_header("Current Chart (placeholder only)")
