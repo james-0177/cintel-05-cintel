@@ -143,7 +143,7 @@ with ui.layout_columns():
         def display_temp():
             """Get the latest reading and return a temperature string"""
             deque_snapshot, df, latest_dictionary_entry = reactive_calc_combined()
-            return f"{latest_dictionary_entry['temp']} C"
+            return f"{latest_dictionary_entry['temp']} C ({round(latest_dictionary_entry['temp'] * 9/5 + 32, 1)} F)"
 
         "warmer than usual"
 
